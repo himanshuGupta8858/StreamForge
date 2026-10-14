@@ -1,6 +1,6 @@
-# 🎵 Spotify-Style Microservices Music Streaming Platform
+# 🎵 StreamForge — Cloud-Native Music Streaming Microservices Platform
 
-A production-grade, containerized full-stack Spotify-style music streaming platform. Extends the existing microservices architecture to support role-based user management (Users & Artists), playlist creation, music track uploading to AWS S3, pre-signed streaming links, artist subscription channels, and automated RabbitMQ email notifications.
+A production-grade, containerized full-stack cloud-native music streaming platform. Built on an event-driven microservices architecture supporting role-based user management (Users & Artists), playlist creation, music track uploading to AWS S3, pre-signed streaming links, artist subscription channels, and automated RabbitMQ email notifications.
 
 ---
 
@@ -55,7 +55,7 @@ A production-grade, containerized full-stack Spotify-style music streaming platf
 ## 📁 Project Structure
 
 ```
-spotify-project-v3/
+StreamForge/
 │
 ├── frontend/                           # React + Vite SPA (Tailwind CSS)
 │   ├── src/
@@ -68,7 +68,7 @@ spotify-project-v3/
 │   │   │   ├── UserDashboard/          # Search, Browse, & Subscriptions Page
 │   │   │   ├── ArtistDashboard/        # Song/Playlist Uploads & Analytics
 │   │   │   ├── Playlist/               # Tracks list & details
-│   │   │   └── MusicPlayer/            # Spotify player controls & speed selection
+│   │   │   └── MusicPlayer/            # StreamForge audio player controls & speed selection
 │   │   ├── components/
 │   │   │   ├── Navbar.jsx              # Responsive header
 │   │   │   └── ProtectedRoute.jsx      # RBAC Route Guard middleware
@@ -185,4 +185,4 @@ Start the entire environment locally:
 ```bash
 docker-compose up --build
 ```
-Open **http://localhost:3000** to load the Spotify music streaming client.
+Open **http://localhost:3000** to load the StreamForge music streaming client.
